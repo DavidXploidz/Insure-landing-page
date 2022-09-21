@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Insure Landing Page</title>
+</head>
+<body>
+
+    <!--Barra de navegación-->
+    <nav class="container d-flex align-items-center justify-content-between py-3">
+        <!--Menu ham-->
+        <img src="images/logo.svg" alt="logo de empresa">
+        <ul id="menu" class="m-0 d-block d-md-none" style="list-style: none;">
+            <li><img id="menuHam" src="/images/icon-hamburger.svg" alt="Icon ham" style="cursor: pointer;"></li>
+            <li><img id="menuClose" class="d-none" src="/images/icon-close.svg" alt="Icon ham" style="cursor: pointer;"></li></li>
+        </ul>
+         <!--Menu nav en desktop-->
+        <ul class="d-none d-md-flex align-items-center justify-content-between " style="list-style: none;">
+            <li><a href="#">How we work</a></li>
+            <li class="mx-4"><a href="#">blog</a></li>
+            <li><a href="#">account</a></li>
+            <li class="mx-4 py-1 px-4" style="border: 1.5px solid black;"><a href="#" class="text-black">view plans</a></li>
+        </ul>
+    </nav>
+
+    <!--Menú Oculto-->
+    <div class="menuOculto d-none">
+        <ul class="text-white px-0 text-uppercase text-center" style="list-style: none;">
+            <li class="text-white mb-3">How we work</li>
+            <li class="text-white mb-3">blog</li>
+            <li class="text-white mb-3">account</li>
+            <li class="d-block mb-3 btnPlans py-2 px-2 text-white text-uppercase mx-4" style="border: 1px solid white">view plans</li>
+        </ul>
+        <img class="position-absolute" style="bottom: 0;" src="images/bg-pattern-mobile-nav.svg" alt="imagen pattern nav">
+    </div>
+
+    <!--Contenido principal-->
+    <main style="background-color: var(--DarkViolet);" class="position-relative">
+        <section class="container-md px-0 px-md-2">
+            <!--Main image mobile-->
+            <img class="d-block d-md-none" src="images/image-intro-mobile.jpg" alt="Image main mobile">
+            
+            <div class="position-relative main-section text-white">
+                <!--Main image desktop-->
+                <img class="d-none d-md-block position-absolute image-desktop" style="top:79px; right: 24px;" src="images/image-intro-desktop.jpg" alt="Image desktop intro">
+
+                <div class="d-none d-md-block" style="border-bottom: 1px solid white; width: 100px; margin-bottom: 2rem;"></div>
+                <h1 class="text-center text-md-start col-12 col-md-3">Humanizing your insurance.</h1>
+                <p class="text-white col-12 col-md-5 px-3 px-md-0">
+                    Get your life insurance coverage easier and faster. We blend our expertise 
+                    and technology to help you find the plan that’s right for you. Ensure you 
+                    and your loved ones are protected.
+                </p>
+                <button class="d-flex btnPlans btnView py-1 px-2 text-uppercase mx-auto mx-md-0" style="border: 2px solid white">
+                    view plans
+                </button>
+                <!--Patrones mobile-->
+                <img class="d-block d-md-none position-absolute" style="bottom: -200px; right: 0;" src="images/bg-pattern-intro-right-mobile.svg" alt="Patron derecha">
+                <img class="d-block d-md-none position-absolute" style="top:0; left: 0;" src="images/bg-pattern-intro-left-mobile.svg" alt="Patron izquierda">
+
+                 
+            </div>
+        </section>
+         <!--Patrones desktop-->
+         <img class="d-none d-md-block position-absolute" width="300" style="bottom: 14%; right: 0;" src="images/bg-pattern-intro-right-desktop.svg" alt="Patron derecha">
+         <img class="d-none d-md-block position-absolute" width="150" style="top:80%; left: 0;" src="images/bg-pattern-intro-left-desktop.svg" alt="Patron izquierda">
+    </main>
+
+    <!--Contenido we´re different-->
+    <section class="py-5 container mt-md-5">
+        <div class="mb-3 mx-auto mx-md-0 mt-md-5" style="border-bottom: 1px solid black; height: 2px; width: 100px;"></div>
+        <h2 class="text-center text-md-start">We’re different</h2>
+        <div class="mt-5 grid-diferent">
+            <div class="d-flex flex-column justify-content-center justify-content-md-start align-items-center">
+                <img src="images/icon-snappy-process.svg" alt="Icon-snappy" class="align-self-center align-self-md-start">
+                <h4 class="my-3 align-self-center align-self-md-start">Snappy Process</h4>
+                <p class="text-center text-md-start">
+                    Our application process can be completed in minutes, not hours. Don’t get 
+                    stuck filling in tedious forms.
+                </p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="images/icon-affordable-prices.svg" alt="icon-affordable-prices"  class="align-self-center align-self-md-start">
+                <h4 class="my-3 align-self-center align-self-md-start">Affordable Prices</h4>
+                <p class="text-center text-md-start">
+                    We don’t want you worrying about high monthly costs. Our prices may be low, 
+                    but we still offer the best coverage possible
+                </p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="images/icon-people-first.svg" alt="icon-people-first"  class="align-self-center align-self-md-start">
+                <h4 class="my-3 align-self-center align-self-md-start">People First</h4>
+                <p class="text-center text-md-start">
+                    Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+                    sure you’re covered when you need it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contenido how we work-->
+    <section class="position-relative container section-work d-md-flex align-items-center justify-content-between">
+        <h2 class="mx-5 text-center text-md-start text-white mb-0">Find out more <span class="d-block">about how we work</span></h2>
+        <button class="mt-5 mt-md-0 d-flex btnPlans btnView py-1 px-2 text-uppercase mx-auto mx-md-5" style="border: 2px solid white; font-size: 16px !important; font-weight: 400;">
+            How we work
+        </button>
+        <!--Patron mobile-->
+        <img class="d-block d-md-none position-absolute" style="top: 0; right: 0;" src="images/bg-pattern-how-we-work-mobile.svg" alt="how we work image">
+
+          <!--Patron desktop-->
+          <img class="d-none d-md-block position-absolute" style="top: 0; right: 0;" src="images/bg-pattern-how-we-work-desktop.svg" alt="how we work image">
+    </section>
+
+    <!--Footer section-->
+    <footer class="mt-5 position-relative" style="background-color: var(--VeryLightGray);">
+        <!--Bg pattern footer mobile-->
+        <img class="d-block d-md-none position-absolute" src="images/bg-pattern-footer-mobile.svg" alt="footer pattern mobile">
+
+        <!--Bg pattern footer desktop-->
+        <img class="d-none d-md-block position-absolute" src="images/bg-pattern-footer-desktop.svg" alt="footer pattern desktop">
+
+      
+        <!--Footer logo image-->
+        <div class="container py-4 d-block justify-content-center d-md-flex justify-content-md-between align-items-center">
+            <img class="mb-4 d-flex mx-auto mx-md-0" src="images/logo.svg" alt="logo">
+            <div class="d-flex justify-content-center">
+                <img src="images/icon-facebook.svg" alt="icon facebook">
+                <img class="mx-2" src="images/icon-twitter.svg" alt="icon twitter">
+                <img src="images/icon-pinterest.svg" alt="icon pinterest">
+                <img class="mx-2" src="images/icon-instagram.svg" alt="icon instagram">
+            </div>
+        </div>
+      
+        <div class="container mb-5 w-100 mx-auto" style="border-bottom: 1px solid var(--DarkGrayishViolet); height: 2px"></div>
+        <div class="grid-footer container" >
+            <ul class="fw-bolder mb-4 px-0 text-secondary text-center text-md-start text-uppercase" style="list-style: none;">
+                our company
+                <li class="mt-4">how we work</li>
+                <li>why insure?</li>
+                <li>check price</li>
+                <li>reviews</li>
+            </ul>
+      
+            <ul class="fw-bolder px-0 mb-4 text-secondary text-center text-md-start  text-uppercase" style="list-style: none;">
+                help me
+                <li class="mt-4">faq</li>
+                <li>terms of use</li>
+                <li>check price</li>
+                <li>privacy policy</li>
+            </ul>
+    
+            <ul class="fw-bolder px-0 mb-4 text-secondary text-center text-md-start  text-uppercase" style="list-style: none;">
+                contact
+                <li class="mt-4">sales</li>
+                <li>support</li>
+                <li>live chat</li>
+            </ul>
+    
+            <ul class="fw-bolder px-0 mb-4 text-secondary text-center text-md-start  text-uppercase" style="list-style: none;">
+                others
+                <li class="mt-4">careers</li>
+                <li>press</li>
+                <li>licenses</li>
+            </ul>    
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

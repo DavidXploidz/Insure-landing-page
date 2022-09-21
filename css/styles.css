@@ -1,0 +1,121 @@
+:root{
+    /* ### Primary */
+    --DarkViolet: hsl(256, 26%, 20%);
+    --GrayishBlue: hsl(216, 30%, 68%);
+    
+    /* ### Neutral */
+    --VeryDarkViolet: hsl(270, 9%, 17%);
+    --DarkGrayishViolet: hsl(273, 4%, 51%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+    --fuentePrincipal: 'Karla', sans-serif;
+    --fuenteHeading: 'DM Serif Display', serif;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--fuentePrincipal);
+}
+h1,h2,h3,h4,h5{
+    font-family: var(--fuenteHeading);
+}
+h1{
+    font-size: 2.6rem !important;
+}
+h2{
+    font-size: 2.2rem !important;
+}
+p{
+    font-family: var(--fuentePrincipal);
+    color: var(--DarkGrayishViolet);
+}
+button{
+    font-family: var(--fuentePrincipal);
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/*Main Section*/
+.main-section{
+    background-color: var(--DarkViolet);
+    padding: 5rem 0;
+}
+
+.btnPlans{
+    background-color: transparent;
+
+}
+
+.section-work{
+    background-color: var(--DarkViolet);
+    padding: 5.2rem 0;
+}
+
+
+li{
+    color: var(--VeryDarkViolet);
+    font-weight: 400;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black !important;
+}
+a{
+    text-decoration: none !important;
+    color: var(--DarkGrayishViolet) !important;
+    text-transform: uppercase;
+    font-size: 16px !important;
+}
+
+.menuOculto{
+    background-color: var(--VeryDarkViolet);
+    padding: 3rem 0;
+    color: white;
+    position: relative;
+    height: 70vh;
+}
+.image-desktop{
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    
+}
+.grid-diferent{
+    display: grid;
+}
+@media (min-width:768px){ 
+    .grid-diferent{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
+}
+.grid-footer{
+    display: grid;
+    justify-content: center;
+    gap: 0px;
+}
+@media (min-width:768px){ 
+    .grid-footer{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        z-index: 12;
+    }
+}
+
+.btnView{
+    color: white;
+    transition-duration: .3s;
+    z-index: 10;
+}
+.btnView:hover{
+    background-color: white;
+    color: black;
+    z-index: 10;
+}
